@@ -7,7 +7,7 @@ import android.widget.ImageButton;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class SettingsActivity extends AppCompatActivity {
 
 
     private ImageButton goToSettings;
@@ -15,11 +15,12 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton goToMaps;
     private ImageButton goToCalls;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_settings);
 
         goToCalls = findViewById(R.id.button_calls);
         goToMain = findViewById(R.id.button_main);
@@ -27,21 +28,21 @@ public class MainActivity extends AppCompatActivity {
         goToSettings = findViewById(R.id.button_settings);
 
         goToMain.setOnClickListener(V->{
-            Intent i = new Intent(MainActivity.this, MainActivity.class);
+            Intent i = new Intent(SettingsActivity.this, MainActivity.class);
             startActivity(i);
         });
 
         goToCalls.setOnClickListener(V->{
-            Intent i = new Intent(MainActivity.this, CallsActivity.class);
+            Intent i = new Intent(SettingsActivity.this, CallsActivity.class);
             startActivity(i);
         });
         goToSettings.setOnClickListener(V->{
-            Intent i = new Intent(MainActivity.this, SettingsActivity.class);
+            Intent i = new Intent(SettingsActivity.this, SettingsActivity.class);
             startActivity(i);
         });
 
         goToMaps.setOnClickListener(V->{
-            Intent i = new Intent(MainActivity.this, MapsActivity.class);
+            Intent i = new Intent(SettingsActivity.this, MapsActivity.class);
             startActivity(i);
         });
     }
