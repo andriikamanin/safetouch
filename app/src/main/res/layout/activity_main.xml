@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+    <!-- Большая кнопка SOS -->
+
+
+    <Button
+        android:id="@+id/button_sos"
+
+        android:layout_width="231dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:contentDescription="Кнопка SOS"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sos_icon"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:elevation="10dp"
+        android:padding="8dp"
+        android:background="@drawable/container_background"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Кнопка 1 (Home) -->
+
+        <!-- Кнопка 2 (Search) -->
+
+        <ImageButton
+            android:id="@+id/button_home"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="Кнопка SOS"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sos_icon" />
+
+        <ImageButton
+            android:id="@+id/button_setting"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="Settings"
+            android:scaleType="fitCenter"
+            android:src="@drawable/settings_icon" />
+
+        <!-- Кнопка 3 (Profile) -->
+        <ImageButton
+            android:id="@+id/button_maps"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="Maps"
+            android:scaleType="fitCenter"
+            android:src="@drawable/maps_icon" />
+
+        <!-- Кнопка 4 (Cart) -->
+        <ImageButton
+            android:id="@+id/button_maps"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="Maps"
+            android:scaleType="fitCenter"
+            android:src="@drawable/maps_icon" />
+
+        <ImageButton
+            android:id="@+id/button_calls"
+            android:layout_width="49dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="Maps"
+            android:scaleType="fitCenter"
+            android:src="@drawable/calls_icon" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
