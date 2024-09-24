@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "419821132818",
+    "project_id": "safetouch-9ea47",
+    "storage_bucket": "safetouch-9ea47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419821132818:android:f95d4dd8499c7eee3c0ccb",
+        "android_client_info": {
+          "package_name": "com.example.safetouch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5-T0VOVfJXgF2KuGeK961C9czrdnYCL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
