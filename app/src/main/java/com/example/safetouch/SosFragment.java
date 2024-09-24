@@ -32,8 +32,8 @@ public class SosFragment extends Fragment {
                 });
 
         // Кнопка "Сигнал"
-        Button signalButton = findViewById(R.id.signalButton);
-        signalButton.setOnClickListener(v -> sendNotification());
+        /*Button signalButton = findViewById(R.id.signalButton);
+        signalButton.setOnClickListener(v -> sendNotification());*/
 
 
         return inflater.inflate(R.layout.fragment_sos, container, false);
